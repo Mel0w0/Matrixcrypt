@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrixcrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1></h1>
+                <input class="presentacion__contenido__input" type="text" id="textoUsuario" placeholder="Ingrese el texto aqui">
+
+            <p class="presentacion__contenido__aviso">
+                <img src="img/aviso.png">Solo letras minúsculas y sin acentos
+            </p>
+            <div class="presentacion__contenido__encriptado">
+                <img class="presentacion__imagen" id="miImagen" src="img/404mensaje.png" alt="Imagen 404 error no encontrado">
+                <p class="presentacion__contenido__texto" id="textoEncriptado"></p>
+            </div>
+        </section>    
+            <div id="alerta" class="alerta">
+                <span id="mensajeAlerta"></span>
+                <button id="cerrarBtnAlert">OK</button>
+            </div>
+
+            <button class="presentacion__botones__uno" onclick="encriptarTexto()">Encriptar</button>
+
+            <div class="presentacion__botones">
+                <button class="presentacion__botones__dos" onclick="desencriptarTexto()">Desencriptar</button>
+                <button class="presentacion__botones__tres" onclick="copiarTexto()" id="copiarBoton" style="display: none;">Copiar</button>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__redes">
+            <a class="footer__redes__link" href="https://www.linkedin.com/in/melissa-ariza-a74642197/"><img src="img/linkedin.png"></a>
+            <a class="footer__redes__link" href="https://github.com/Mel0w0"><img src="img/github.png"></a>
+        </div>
+        <p>Desarrollado por Melissa Ariza 2024</p>
+    </footer>   
+    <script src="app.js"></script> 
+</body>
+</html>
