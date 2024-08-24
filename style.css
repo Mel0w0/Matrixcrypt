@@ -55,27 +55,21 @@ body{
     background: linear-gradient(to bottom,#FF1622cc,#9602051a);
 }
 
-
-.presentacion__contenido__texto .presentacion__contenido__encriptado{
+.presentacion__contenido__encriptado{
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 .presentacion__imagen{
     position: absolute;
-    right: 610px;
-    top: 375px; /* Ajusta según sea necesario */
-    max-width: 5%;
+    bottom: 61%;
+    left: 35%;
+    max-width: 30%;
     height: auto;
+    z-index: 2;
 }
 
 .presentacion__contenido__texto{  
+    z-index: 1;
     background: linear-gradient(to bottom,#1875FFcc,#0727571a);
 }
 
@@ -200,7 +194,7 @@ body{
 }
 
 /*1*/
-@media only screen and (max-width: 768px){
+@media (max-width: 1000px){
     body{
         background-image: url('img/fondotablet2.jpg');
         background-size: cover;
@@ -209,20 +203,9 @@ body{
     }
 
     .presentacion__contenido{
-        align-items: flex-end;
         align-items: center;
-        gap: 1px;
-        margin: 0 auto;
-        margin-top: 100px;
-    }
-
-    .presentacion__contenido__input,
-    .presentacion__contenido__texto{
-        padding: 10% 15%;
-    }
-    .presentacion__contenido__input{
-        width: 100%; /* Aumenta el tamaño del input */
-        padding: 5px;
+        margin-top: 20%;
+        margin-left: 7%;
     }
 
     .presentacion__contenido__aviso{
@@ -240,21 +223,23 @@ body{
         padding: 10px 50px;
     }
 
-    .presentacion__botones__dos{
+    .presentacion__contenido__encriptado{
+        width: 100%;
+        display: block;
     }
 
     .presentacion__imagen{
-        position: absolute;
-        top: 450px;
-        right: 140px;
-        max-width: 12%;
+        width: 100%;
+        bottom: 10%;
+        left: 30%;
+        max-width: 23%;
         height: auto;
     }
 }
 
 
 /*2*/
-@media only screen and (max-width:375px) {
+@media (max-width: 410px) {
     body{
         background-image: url('img/fondocel.jpg');
         background-size: contain;
@@ -266,7 +251,6 @@ body{
     .presentacion__contenido{
         flex-direction: column;
         height: auto;
-        /*gap: 100px;*/
         margin: 0 auto;
         margin-bottom: 200px;
     }
@@ -279,7 +263,7 @@ body{
     }
 
     .presentacion__contenido__input{
-        width: 100%; /* Aumenta el tamaño del input */
+        width: 100%; 
         padding: 5px;
         margin-bottom: 200px;
     }
@@ -306,10 +290,15 @@ body{
         padding: 5px 25px;
     }
 
+    .presentacion__contenido__encriptado{
+        width: 100%;
+        display: block;
+    }
+
     .presentacion__imagen{
         position: absolute;
-        top: 462px;
-        right: 139px;
+        top: 10px;
+        left: 35%;
         max-width: 25%;
         height: auto;
     }
